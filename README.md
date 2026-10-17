@@ -2,8 +2,8 @@
 
 Public FAQ + privacy policy for App Store / Play listing URLs.
 
-Live (after Cloudflare Pages deploy): `https://class-pilot.pages.dev/`  
-Privacy: `https://class-pilot.pages.dev/privacy.html`  
+Live (after Cloudflare Pages deploy): `https://classpilot-app.pages.dev/`  
+Privacy: `https://classpilot-app.pages.dev/privacy.html`  
 (Cloudflare serves `privacy.html` at `/privacy`. Do not add a `_redirects` rule for it, or the two URLs loop.)
 
 App source: [kitecodestudios/class-pilot](https://github.com/kitecodestudios/class-pilot)
@@ -21,19 +21,19 @@ Open http://localhost:8080
 1. [dash.cloudflare.com](https://dash.cloudflare.com) → **Workers & Pages** → **Create** → **Pages** → **Connect to Git**
 2. Select this repo (`kitecodestudios/class-pilot-website`)
 3. Settings:
-   - **Project name:** `class-pilot` (so the URL is `class-pilot.pages.dev`)
+   - **Project name:** `classpilot-app` (so the URL is `classpilot-app.pages.dev`)
    - **Production branch:** `main`
    - **Framework preset:** None
    - **Build command:** *(empty)*
    - **Build output directory:** `/` (leave as root)
 4. **Save and Deploy**
-5. Confirm `https://class-pilot.pages.dev/privacy.html`
+5. Confirm `https://classpilot-app.pages.dev/privacy.html`
 
 Optional later: **Custom domains** → `classpilot.app`.
 
 ## Keep this site aligned with the app
 
-This repo does not update when the app repo changes. After a product or policy change in ClassPilot, update the matching page here, then deploy Cloudflare Pages. The live site at `class-pilot.pages.dev` stays on the last deploy until then.
+This repo does not update when the app repo changes. After a product or policy change in ClassPilot, update the matching page here, then deploy Cloudflare Pages. The live site at `classpilot-app.pages.dev` stays on the last deploy until then.
 
 | App change | Update here |
 | --- | --- |
